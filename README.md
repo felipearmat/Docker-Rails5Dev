@@ -17,7 +17,7 @@ Esse container está equipado com Ruby 2.5.3 e Rails 5.2.2 (além de todas as su
    adapter: postgresql
    username: root
    password: root 
-   host: <%= ENV['DB_HOST'] %>`
+   host: <%= ENV['DB_HOST'] %>
 ```
   Assim você poderá utilizar a mesma imagem em diferentes ambientes Linux, Mac ou Windows (a maneira com que o docker trata as redes no Linux é diferente, por isso usar uma variavel de ambiente é uma boa opção). 
 
@@ -53,4 +53,4 @@ Um detalhe a mais, você talvez queira iniciar seu servidor utilizando o comando
 
 Alguns ambientes podem encrencar com o localhost de um ambiente docker, se você indicar o endereço 0.0.0.0 você terá a garantia de que o container se conectará à porta do host. E não se esqueça de alterar seu database.yml para usar as configurações informadas no começo desse readme!!!!
 
-#Divirta-se!
+###Divirta-se!
